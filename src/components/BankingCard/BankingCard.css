@@ -1,0 +1,128 @@
+
+
+.bankingCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+ 
+}
+
+.bankingCard:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  background-color: #d1fae5;
+  color: #059669;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 18px;
+  transition: transform 0.10s ease-in-out;
+
+}
+
+.icon :hover {
+ cursor: pointer;
+  transform: translateY(-5px); /* moves it up by 5px */
+  animation: bounce 0.4s ease-in-out infinite alternate;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.description {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.bankingCardComponents{
+   margin-left: 70px;
+   margin-right: 120px;
+   display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: 10px;
+  
+}
+.image img{
+  width: 380px;
+  height: 700px;
+}
+.cardContent{
+  max-width: 700px;
+    margin-top: 80px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading{
+  font-size: 80px;
+  line-height: 110.00000000000001%;
+  font-weight: 500;
+  color: rgba(26, 25, 30, 1);
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.cardComponent {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@media  (max-width: 768px) {
+  .bankingCardComponents {
+    margin-top: -10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .image img {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .heading p{
+    font-size: 40px;
+    text-align: center;
+       line-height: 110.00000000000001%;
+
+  }
+  
+  .cardComponent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardContent{
+    margin-top: 10px;
+  justify-content: center;
+  align-items: center;  
+  }
+  
+}

@@ -1,0 +1,134 @@
+
+.SavingAccountContainer {
+  max-width: 1200px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+
+
+p {
+  font-size: 15px;
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+ h2 {
+  font-size: 64px;
+  font-weight: 500;
+  color: #111827;
+  line-height:110.00000000000001%;
+  margin-bottom: 24px;
+  max-width: 590px;
+}
+}
+.parContent {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+ 
+}
+
+.parContent p {
+  font-size: 20px;
+  color: #4b5563;
+  line-height: 1.6;
+  line-height: 180%;
+  max-width: 600px;
+}
+
+.parContent button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #38b2ac;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.frameImage {
+  display: flex;
+  gap: 18px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+
+.image-box {
+  border-radius: 20px;
+  padding: 40px 32px;
+  width: 160px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover{
+  transform: translateY(-10px);
+}
+
+.image-box img {
+  width: 214px;
+  height: 214px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0;
+  line-height: 120%;
+}
+
+.price {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .SavingAccountContainer {
+    padding: 40px 24px;
+  }
+
+  .SavingAccountContainer {
+    
+h6 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  } 
+
+  .frameImage {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .image-box {
+    width: 140px;
+    padding: 32px 24px;
+  }
+
+  .parContent {
+   display: flex;
+   flex-wrap: wrap;
+  }
+
+  
+}
+

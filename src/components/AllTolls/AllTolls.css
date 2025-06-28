@@ -1,0 +1,93 @@
+.AllTollsContainer{
+   max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  text-align: start;
+
+
+  .apps{
+    max-width: 600px;
+
+    .logo{
+      max-width: 120px;
+      height: 50px;
+    }
+  }
+
+  .tolls{
+    max-width: 1046px;
+    display: flex;
+    align-items: center;
+    justify-content: space-betweecenter;
+    gap: 70px;
+
+  }
+  .tollsContent{
+    max-width: 500px;
+   h3{
+
+    font-size: 60px;
+    line-height: 110.00000000000001%;
+    letter-spacing: -3%;
+    font-weight: 500;
+    margin: 0%;
+    padding-top: 40px;
+   }
+    p{
+      font-size: 17px;
+    }
+  }
+
+
+  .tollsverify{
+     gap: 20px;
+     display: flex;
+     flex-direction: column;
+     padding-top: 150px;
+    .tollContent{
+       background: url('data:image/svg+xml;utf8,<svg width="24" height="24" fill="%232cb097" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="%23e6f4f1"/><path d="M9 12l2 2 4-4" stroke="green" stroke-width="2" fill="none" stroke-linecap="round"/></svg>') no-repeat left center;
+         transition: transform 0.5s ease-in-out;
+      padding-left: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      font-weight: 500;
+      
+    } 
+    .tollContent:hover{
+      transform: translateY(-10px);
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .AllTollsContainer{
+    padding: 20px;
+    margin-bottom: 20px;
+    .tolls{
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .tollsContent{
+      text-align: center;
+
+      h3{
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: -2%;
+        font-weight: bold;
+      }
+    }
+    .tollsverify{
+      padding-top: 50px;
+      .tollContent{
+        padding-left: 33px;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.Notificationscontainer{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+
+
+.leftContent{
+ .notification{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 30px;
+ }
+h6{
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0%;
+    line-height: 110.00000000000001%;
+}
+p{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0%;
+  max-width:510px;
+ }
+}
+
+.listContents {
+  display: grid;
+  gap: 10px;
+}
+
+.listContent {
+  background: url("data:image/svg+xml;utf8,<svg width='24' height='24' fill='white' xmlns='http://www.w3.org/2000/svg'><circle cx='12' cy='12' r='12' fill='%235bb5a2'/><path d='M9 12l2 2 4-4' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/></svg>") no-repeat left center;
+  padding-left: 30px;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+}
+.listContent:hover{
+  cursor: pointer;
+ transform: translateY(-5px); /* moves it up by 5px */
+  animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+.compareCardBtn{
+  background: none;
+  color: rgba(91, 181, 162, 1);
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -3%;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+}
+
+
+
+.rightContent img{
+  max-width: 500px;
+}
+
+
+}
+
+@media (max-width: 768px) {
+  .Notificationscontainer{
+        padding: 10px;
+    padding-left:10px;
+     padding-right:10px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .listContents {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .listContent {
+   text-align:start;
+    padding-left: 30px;
+    font-size: 17px;
+  }
+
+  .leftContent {
+   align-items: center;
+ 
+ 
+  
+  h6{
+    font-size: 40px;
+    text-align: center;
+  
+  }
+
+  .notification{
+  line-height: 0;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+   }
+
+   p {
+    font-size: 16px;
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.rightContent img{
+  width: 300px;
+  height: auto;
+}
+
+}
